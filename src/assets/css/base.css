@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "RobotoR";
+  src: url("../fonts/RobotoR.woff") format("woff");
+  font-weight: 500;
+}
+
+:root {
+  --color-primary: #07a300;
+  --color-secondary: rgb(162, 0, 255);
+  --color-tertiary: rgb(89, 0, 255);
+  --color-black: rgb(13, 3, 31);
+  --color-white: rgb(250, 250, 250);
+  --color-lightGray: rgb(230, 227, 238);
+  --color-gray: rgb(50, 49, 51);
+}
+
+html,
+body {
+  /* overflow: hidden; */
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  font-family: RobotoR, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--color-black);
+  scroll-behavior: smooth;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+  /* font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: var(--fc-primary); */
+}
+
+button {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
